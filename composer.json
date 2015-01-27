@@ -1,0 +1,26 @@
+{
+    "name": "graze/feed",
+    "description": "supply ordered feeds of articles",
+    "homepage": "https://github.com/graze/feed",
+    "license": "MIT",
+    "type": "library",
+    "keywords": ["feed", "feeds"],
+    "authors": [
+        {
+            "name": "Graze tech team",
+            "email": "developers@graze.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Graze\\Feed\\": ["src", "test/unit"]
+        }
+    },
+    "require": {
+        "php": ">=5.4"
+    },
+    "require-dev": {
+        "adlawson/timezone": "~1.0",
+        "phpunit/phpunit": "~4.0"
+    }
+}
