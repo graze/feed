@@ -2,7 +2,7 @@
 
 This is a very simple library designed to faciliate the implementation of simple, lightweight article feeds, where articles can be anything you like.
 
-It can be installed in whichever way you prefer, but we recommend [Composer][packagist].
+It can be installed in whichever way you prefer, but we recommend [Composer](https://packagist.org/packages/graze/feed).
 ````json
 {
     "require": {
