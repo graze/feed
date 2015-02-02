@@ -2,7 +2,7 @@
 
 [![Latest Stable Version](http://img.shields.io/packagist/v/graze/feed.svg?style=flat)](https://packagist.org/packages/graze/feed)
 [![Build Status](http://img.shields.io/travis/graze/feed/master.svg?style=flat)](https://travis-ci.org/graze/feed)
-![Minimum PHP Version](http://img.shields.io/badge/php-~5.4-8892BF.svg?style=flat)
+![Minimum PHP Version](http://img.shields.io/badge/php-~5.5-8892BF.svg?style=flat)
 
 This is a very simple library designed to facilitate the implementation of simple, lightweight article feeds, where articles can be anything you like.
 
