@@ -13,4 +13,4 @@ install:
   - travis_retry composer install --no-interaction
 
 script:
-  - vendor/bin/phpunit
+  - composer run-script test
