@@ -1,6 +1,6 @@
 <?php
 
-/*
+/**
  * This file is part of graze/feed.
  *
  * Copyright (c) 2015 Nature Delivered Ltd.
@@ -16,7 +16,7 @@ namespace Graze\Feed;
 class RandomFeedStack extends FeedStack
 {
     /**
-     * @param integer $number
+     * @param int $number
      * @return Product[]
      */
     public function supply($number)

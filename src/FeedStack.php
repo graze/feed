@@ -1,6 +1,6 @@
 <?php
 
-/*
+/**
  * This file is part of graze/feed.
  *
  * Copyright (c) 2015 Nature Delivered Ltd.
@@ -23,7 +23,9 @@ class FeedStack implements FeedInterface
     protected $feeds = [];
 
     /**
-     * @param Graze\Web\Feed\FeedInterface[]
+     * FeedStack constructor.
+     *
+     * @param array $feeds
      */
     public function __construct(array $feeds)
     {
@@ -33,18 +35,18 @@ class FeedStack implements FeedInterface
     }
 
     /**
-     * @param integer $number
-     * @return boolean
+     * @param int $number
+     * @return bool
      */
     public function supports($number)
     {
-        return (bool) array_filter(array_map(function(FeedInterface $feed) use ($number) {
+        return (bool)array_filter(array_map(function (FeedInterface $feed) use ($number) {
             return $feed->supports($number);
         }, $this->feeds));
     }
 
     /**
-     * @param integer $number
+     * @param int $number
      * @return Product[]
      */
     public function supply($number)
@@ -58,7 +60,8 @@ class FeedStack implements FeedInterface
     }
 
     /**
-     * @param Graze\Web\Feed\FeedInterface
+     * @param FeedInterface $feed
+     * @return $this
      */
     protected function addFeed(FeedInterface $feed)
     {

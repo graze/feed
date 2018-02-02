@@ -1,6 +1,6 @@
 <?php
 
-/*
+/**
  * This file is part of graze/feed.
  *
  * Copyright (c) 2015 Nature Delivered Ltd.
@@ -20,9 +20,10 @@ class ArticleFeed extends AbstractFeed
      */
     protected $articles = [];
 
-
     /**
-     * @param array
+     * Array of articles
+     *
+     * @param array $articles
      */
     public function __construct(array $articles)
     {
