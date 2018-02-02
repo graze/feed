@@ -1,6 +1,6 @@
 <?php
 
-/*
+/**
  * This file is part of graze/feed.
  *
  * Copyright (c) 2015 Nature Delivered Ltd.
@@ -18,17 +18,17 @@ use LogicException;
 abstract class AbstractFeed implements FeedInterface
 {
     /**
-     * @param integer $number
-     * @return boolean
+     * @param int $number
+     * @return bool
      */
     public function supports($number)
     {
-        return (count($this->getArticles()) >= (int) $number)
-                && ((int) $number >= 0);
+        return (count($this->getArticles()) >= (int)$number)
+            && ((int)$number >= 0);
     }
 
     /**
-     * @param integer $number
+     * @param int $number
      * @throws LogicException
      * @return array
      */

@@ -1,6 +1,6 @@
 <?php
 
-/*
+/**
  * This file is part of graze/feed.
  *
  * Copyright (c) 2015 Nature Delivered Ltd.

@@ -1,6 +1,6 @@
 <?php
 
-/*
+/**
  * This file is part of graze/feed.
  *
  * Copyright (c) 2015 Nature Delivered Ltd.
@@ -16,13 +16,13 @@ namespace Graze\Feed;
 interface FeedInterface
 {
     /**
-     * @param integer $number
-     * @return boolean
+     * @param int $number
+     * @return bool
      */
     public function supports($number);
 
     /**
-     * @param integer $number
+     * @param int $number
      * @return array
      */
     public function supply($number);
